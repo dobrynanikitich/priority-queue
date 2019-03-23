@@ -140,9 +140,9 @@ describe('Node', () => {
 			child.appendChild(grandson);
 
 			grandson.swapWithParent();
-
 			expect(child.parent).to.equal(grandson);
 			expect(grandson.parent).to.equal(root);
+			
 		});
 
 		it('updates child.parent', () => {
